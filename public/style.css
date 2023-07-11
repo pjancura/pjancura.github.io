@@ -183,7 +183,7 @@ a > img {
 
 
 /* STYLE FOR SMALLER DEVICES */
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .introDiv {
         width: 100%;
         aspect-ratio: 1.579;
