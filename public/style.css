@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  background-color: ffab4cff;
+  font-family: "Verdana", "Tahoma", "sans-serif";
+  color: #2f4858ff;
+}
+
+.introDiv {
+  width: 100%;
+  aspect-ratio: 1.579;
+  position: relative;
+  z-index: 6;
+}
+
+.headerPic {
+  width: 100%;
+  position: relative;
+  display: block;
+  z-index: -1;
+}
+
+.mask1 {
+  width: 100%;
+  aspect-ratio: 1.579;
+  position: absolute;
+  background-color: #673d035e;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.headerTextDiv {
+  width: 50vw;
+  position: relative;
+  margin-top: 40vw;
+  margin-left: 11%;
+  z-index: 10;
+}
+
+.headerLine1 {
+  font-size: 3vw;
+}
+h1.headerLine2 {
+  font-size: 6vw;
+}
+.headerText {
+  color: #9fdafa;
+  line-height: 0.5rem;
+  width: fit-content;
+}
+.headerLine3 {
+  font-size: 1.5vw;
+}
+/* ABOUT ME DIV */
+.aboutMeDiv {
+  position: relative;
+  background-color: #fff8f0ff;
+  padding: 7vw 6%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 20;
+}
+
+.aboutMeCard1 {
+  width: 45vw;
+}
+
+.aboutMeTitle {
+  font-size: 3vw;
+  margin: 0;
+}
+.introStory {
+  font-size: 1.5vw;
+}
+
+#profilePic {
+  width: 20vw;
+  aspect-ratio: 0.7;
+  border-radius: 40px;
+}
+
+.downloadBtn {
+  width: fit-content;
+  margin-top: 2rem;
+  padding: 0.5vw 1vw;
+  background-color: #33658aff;
+  border: none;
+  border-radius: 50vh;
+  justify-content: center;
+}
+.downloadAnchor {
+  color: #9fdafaff;
+  text-decoration: none;
+  position: relative;
+  margin: auto;
+  top: -12.5%;
+}
+.downloadText {
+  font-size: 2.25vw;
+}
+.downloadIcon {
+  width: 2.5vw;
+  aspect-ratio: 1.6;
+}
+
+/* SUMMARY OF WORK DIV */
+.summaryOfWork {
+  background-color: #f49e4c;
+  padding: 4rem 11%;
+}
+
+.summaryTitle {
+  width: 45vw;
+  padding: 1vw 1.2vw;
+  background-color: #33658aff;
+  color: #9fdafaff;
+  font-size: 2.25vw;
+  border-radius: 50vh;
+}
+
+.detailDiv {
+  background-color: #9fdafa;
+  border-radius: 35px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  color: #33658aff;
+  /* font-size: 1.25vw;  */
+}
+li {
+  font-size: 1.25vw;
+}
+
+.detailDiv > h3 {
+  margin-bottom: 0;
+  font-size: 1.25vw;
+}
+
+.detailDiv > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.25vw;
+}
+
+.detailDiv > ul {
+  margin-top: 0;
+}
+
+.detailTable {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.464vw auto;
+}
+th,
+td {
+  text-align: left;
+  width: 23vw;
+  font-size: 1.25vw;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #33658aff;
+  color: #9fdafaff;
+  padding: 0.5rem 11% 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.contactDiv {
+  line-height: 0.5rem;
+  font-size: 1.5vw;
+}
+.profileLinkDiv > a {
+  padding-right: 1vw;
+}
+a > img {
+  width: 2.5vw;
+}
+
+.copyRight {
+  margin-top: auto;
+  font-size: 1.25vw;
+}
+
+
+/* STYLE FOR SMALLER DEVICES */
+@media (max-width: 800px) {
+    .introDiv {
+        width: 100%;
+        aspect-ratio: 1.579;
+        position: relative;
+        z-index: 6;
+      }
+      
+    .headerPic {
+    width: 100%;
+    position: relative;
+    display: block;
+    z-index: -1;
+    }
+    
+    .mask1 {
+    width: 100%;
+    aspect-ratio: 1.579;
+    position: absolute;
+    background-color: #673d035e;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    }
+    
+    .headerTextDiv {
+    width: 75vw;
+    position: relative;
+    margin-top: 32vw;
+    margin-left: 11%;
+    z-index: 10;
+    }
+    
+    .headerText {
+    color: #9fdafa;
+    line-height: 0.5rem;
+    width: fit-content;
+    }
+    .headerLine1 {
+    font-size: 5vw;
+    }
+    h1.headerLine2 {
+    font-size: 10vw;
+    }
+    .headerLine3 {
+    font-size: 3vw;
+    line-height: 4vw;
+    }
+
+  /* ABOUT ME DIV */
+  .aboutMeDiv {
+    position: relative;
+    background-color: #fff8f0ff;
+    padding: 7vw 5vw;
+    display: inline-block;
+    /* justify-content: flex-start; */ 
+    z-index: 20;
+  }
+
+  .aboutMeCard1 {
+    width: 100%;
+    float: left;
+  }
+
+  .aboutMeTitle {
+    font-size: 4vw;
+    margin: 0;
+  }
+  .introStory {
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+
+  .downloadBtn {
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 1vw 1.5vw;
+    background-color: #33658aff;
+    border: none;
+    border-radius: 50vh;
+    justify-content: center;
+  }
+  .downloadAnchor {
+    color: #9fdafaff;
+    text-decoration: none;
+    position: relative;
+    margin: auto;
+    top: -12.5%;
+  }
+  .downloadText {
+    font-size: 4vw;
+  }
+  .downloadIcon {
+    width: 4.5vw;
+    aspect-ratio: 1.6;
+  }
+
+  #profilePic {
+    display: none;
+  }
+
+  /* SUMMARY OF WORK DIV */
+  br {
+    display: none;
+  }
+  .summaryOfWork {
+    background-color: #f49e4c;
+    padding: 10vw 10vw;
+  }
+
+  .summaryTitle {
+    width: 75vw;
+    margin-top: 1.7vw;
+    background-color: #33658aff;
+    color: #9fdafaff;
+    font-size: 4vw;
+    border-radius: 50vh;
+    outline: 0.5vw solid #33658aff;
+  }
+
+  .detailDiv {
+    background-color: #9fdafa;
+    border-radius: 22px;
+    padding: 0.5vw 3vw 0.5vw 3vw;
+    color: #33658aff;
+  }
+  li {
+    font-size: 2.5vw;
+  }
+
+  .detailDiv > h3 {
+    margin-bottom: 0;
+    font-size: 2.5vw;
+  }
+
+  .detailDiv > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5vw;
+  }
+
+  .detailDiv > ul {
+    margin-top: 0;
+  }
+
+  .detailTable {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.464vw auto;
+  }
+  th,
+  td {
+    text-align: left;
+    width: 23vw;
+    font-size: 2.5vw;
+  }
+
+  /* FOOTER */
+
+  .contactDiv {
+    line-height: 0.5rem;
+    font-size: 2.5vw;
+  }
+  .profileLinkDiv > a {
+    padding-right: 1vw;
+  }
+  a > img {
+    width: 4vw;
+  }
+
+  .copyRight {
+    margin-top: auto;
+    font-size: 2vw;
+  }
+}
