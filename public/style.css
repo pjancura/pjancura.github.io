@@ -258,7 +258,7 @@ a > img {
   .downloadBtn {
     width: fit-content;
     margin-top: 2rem;
-    padding: 1vw 1.5vw;
+    padding: 2vw 2.5vw;
     background-color: #33658aff;
     border: none;
     border-radius: 50vh;
