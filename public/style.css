@@ -161,7 +161,7 @@ td {
 footer {
   background-color: #33658aff;
   color: #9fdafaff;
-  padding: 0.5rem 11% 4rem;
+  padding: 0.5rem 11% 75px;
   display: flex;
   justify-content: space-between;
 }
@@ -355,7 +355,7 @@ a > img {
   }
 
   .copyRight {
-    margin-top: 4.25rem;
+    margin-top: 45px;
     font-size: 2vw;
   }
 }
