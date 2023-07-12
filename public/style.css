@@ -44,7 +44,7 @@ h1.headerLine2 {
   font-size: 6vw;
 }
 .headerText {
-  color: #9fdafa;
+  color: white;
   line-height: 0.5rem;
   width: fit-content;
 }
@@ -89,7 +89,7 @@ h1.headerLine2 {
   justify-content: center;
 }
 .downloadAnchor {
-  color: #9fdafaff;
+  color: white;
   text-decoration: none;
   position: relative;
   margin: auto;
@@ -113,7 +113,7 @@ h1.headerLine2 {
   width: 45vw;
   padding: 1vw 1.2vw;
   background-color: #33658aff;
-  color: #9fdafaff;
+  color: white;
   font-size: 2.25vw;
   border-radius: 50vh;
 }
