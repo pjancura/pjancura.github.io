@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: ffab4cff;
+  background-color: #f49e4c;
   font-family: "Verdana", "Tahoma", "sans-serif";
   color: #2f4858ff;
 }
@@ -357,5 +357,18 @@ a > img {
   .copyRight {
     margin-top: 45px;
     font-size: 2vw;
+  }
+}
+
+@media all and (min-width: 1700px){
+  body{
+    background-color: none;
+    background-image: linear-gradient(#f6a961, #2f4858ff);
+    width: 1500px;
+    margin: 0 auto;
+    /* padding: 0 5vw; */
+  }
+  .headerTextDiv{
+    margin-top: 35vw;
   }
 }
