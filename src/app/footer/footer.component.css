@@ -1,0 +1,22 @@
+footer {
+    background-color: #33658aff;
+    color: #9fdafaff;
+    padding: 0.5rem 11% 75px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactDiv {
+    line-height: 0.5rem;
+    font-size: 1.5vw;
+  }
+  .profileLinkDiv > a {
+    padding-right: 1vw;
+  }
+  a > img {
+    width: 2.5vw;
+  }
+  
+  .copyRight {
+    margin-top: auto;
+    font-size: 1.25vw;
+  }

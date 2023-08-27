@@ -1,0 +1,50 @@
+.aboutMeDiv {
+    position: relative;
+    background-color: #fff8f0ff;
+    padding: 7vw 6%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 20;
+  }
+  
+  .aboutMeCard1 {
+    width: 45vw;
+  }
+  
+  .aboutMeTitle {
+    font-size: 3vw;
+    margin: 0;
+  }
+  .introStory {
+    font-size: 1.5vw;
+  }
+  
+  #profilePic {
+    width: 20vw;
+    aspect-ratio: 0.7;
+    border-radius: 40px;
+  }
+  
+  .downloadBtn {
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 0.5vw 1vw;
+    background-color: #33658aff;
+    border: none;
+    border-radius: 50vh;
+    justify-content: center;
+  }
+  .downloadAnchor {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin: auto;
+    top: -12.5%;
+  }
+  .downloadText {
+    font-size: 2.25vw;
+  }
+  .downloadIcon {
+    width: 2.5vw;
+    aspect-ratio: 1.6;
+  }

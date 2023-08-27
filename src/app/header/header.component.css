@@ -1,6 +1,6 @@
 .introDiv {
     width: 100%;
-    aspect-ratio: 1.579;
+    aspect-ratio: 1.945;
     position: relative;
     z-index: 6;
   }
@@ -14,7 +14,7 @@
   
   .mask1 {
     width: 100%;
-    aspect-ratio: 1.579;
+    aspect-ratio: 1.945;
     position: absolute;
     background-color: #673d035e;
     top: 0;

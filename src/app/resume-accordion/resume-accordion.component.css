@@ -1,0 +1,51 @@
+.summaryOfWork {
+    background-color: #f49e4c;
+    padding: 4rem 11%;
+  }
+  
+  .summaryTitle {
+    width: 45vw;
+    padding: 1vw 1.2vw;
+    background-color: #33658aff;
+    color: white;
+    font-size: 2.25vw;
+    border-radius: 50vh;
+  }
+  
+  .detailDiv {
+    background-color: #9fdafa;
+    border-radius: 35px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    color: #33658aff;
+    /* font-size: 1.25vw;  */
+  }
+  li {
+    font-size: 1.25vw;
+  }
+  
+  .detailDiv > h3 {
+    margin-bottom: 0;
+    font-size: 1.25vw;
+  }
+  
+  .detailDiv > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25vw;
+  }
+  
+  .detailDiv > ul {
+    margin-top: 0;
+  }
+  
+  .detailTable {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.464vw auto;
+  }
+  th,
+  td {
+    text-align: left;
+    width: 23vw;
+    font-size: 1.25vw;
+  }
