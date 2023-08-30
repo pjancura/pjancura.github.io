@@ -1,3 +1,5 @@
+
+
 .introDiv {
     width: 100%;
     aspect-ratio: 1.945;
@@ -25,21 +27,22 @@
   .headerTextDiv {
     width: 50vw;
     position: relative;
-    margin-top: 33vw;
+    margin-top: 30%;
     margin-left: 11%;
     z-index: 10;
+    color: white;
   }
   
+  .headerTextGroup {
+    line-height: 0.90em;
+  }
   .headerLine1 {
     font-size: 3vw;
+    margin-left: -2px;
   }
   h1.headerLine2 {
     font-size: 6vw;
-  }
-  .headerText {
-    color: white;
-    line-height: 0.5rem;
-    width: fit-content;
+    margin-left: -5px;
   }
   .headerLine3 {
     font-size: 1.5vw;
