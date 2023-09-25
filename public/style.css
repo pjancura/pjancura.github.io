@@ -44,7 +44,7 @@ h1.headerLine2 {
   font-size: 6vw;
 }
 .headerText {
-  color: #9fdafa;
+  color: white;
   line-height: 0.5rem;
   width: fit-content;
 }
@@ -89,7 +89,7 @@ h1.headerLine2 {
   justify-content: center;
 }
 .downloadAnchor {
-  color: #9fdafaff;
+  color: white;
   text-decoration: none;
   position: relative;
   margin: auto;
@@ -113,7 +113,7 @@ h1.headerLine2 {
   width: 45vw;
   padding: 1vw 1.2vw;
   background-color: #33658aff;
-  color: #9fdafaff;
+  color: white;
   font-size: 2.25vw;
   border-radius: 50vh;
 }
@@ -161,7 +161,7 @@ td {
 footer {
   background-color: #33658aff;
   color: #9fdafaff;
-  padding: 0.5rem 11% 1.5rem;
+  padding: 0.5rem 11% 75px;
   display: flex;
   justify-content: space-between;
 }
@@ -183,7 +183,7 @@ a > img {
 
 
 /* STYLE FOR SMALLER DEVICES */
-@media (max-width: 800px) {
+@media all and (max-width: 800px) {
     .introDiv {
         width: 100%;
         aspect-ratio: 1.579;
@@ -217,7 +217,7 @@ a > img {
     }
     
     .headerText {
-    color: #9fdafa;
+    color: white;
     line-height: 0.5rem;
     width: fit-content;
     }
@@ -236,9 +236,8 @@ a > img {
   .aboutMeDiv {
     position: relative;
     background-color: #fff8f0ff;
-    padding: 7vw 5vw;
+    padding: 7vw 11%;
     display: inline-block;
-    /* justify-content: flex-start; */ 
     z-index: 20;
   }
 
@@ -259,14 +258,14 @@ a > img {
   .downloadBtn {
     width: fit-content;
     margin-top: 2rem;
-    padding: 1vw 1.5vw;
+    padding: 2vw 2.5vw;
     background-color: #33658aff;
     border: none;
     border-radius: 50vh;
     justify-content: center;
   }
   .downloadAnchor {
-    color: #9fdafaff;
+    color: white;
     text-decoration: none;
     position: relative;
     margin: auto;
@@ -294,20 +293,22 @@ a > img {
   }
 
   .summaryTitle {
-    width: 75vw;
+    width: 100%;
     margin-top: 1.7vw;
     background-color: #33658aff;
-    color: #9fdafaff;
+    color: white;
     font-size: 4vw;
     border-radius: 50vh;
     outline: 0.5vw solid #33658aff;
   }
 
   .detailDiv {
+    width: 96%;
     background-color: #9fdafa;
-    border-radius: 22px;
+    border-radius: 25px;
     padding: 0.5vw 3vw 0.5vw 3vw;
     color: #33658aff;
+    margin-top: 0.45vw;
   }
   li {
     font-size: 2.5vw;
@@ -347,14 +348,14 @@ a > img {
     font-size: 2.5vw;
   }
   .profileLinkDiv > a {
-    padding-right: 1vw;
+    padding-right: 3vw;
   }
   a > img {
-    width: 4vw;
+    width: 6vw;
   }
 
   .copyRight {
-    margin-top: auto;
+    margin-top: 45px;
     font-size: 2vw;
   }
 }
