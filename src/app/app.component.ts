@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-root',
+  selector: 'portfolio-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

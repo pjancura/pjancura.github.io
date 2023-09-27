@@ -4,11 +4,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { HeaderComponent } from './home/components/header/header.component';
+import { AboutMeComponent } from './home/components/about-me/about-me.component';
 import { ResumeAccordionComponent } from './resume-accordion/resume-accordion.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './home/components/footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AboutMeComponent,
     ResumeAccordionComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

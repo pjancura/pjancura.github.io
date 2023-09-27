@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg border border-dark">
     <div class="container-fluid navbarDiv">
-        <a class="navbar-brand" href="#aboutMeDiv">About Me</a>
+        <a class="navbar-brand" [routerLink]="'home'">PJ</a>
         <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,3 +16,4 @@
           </div>
     </div>
 </nav>
+<router-outlet></router-outlet>
