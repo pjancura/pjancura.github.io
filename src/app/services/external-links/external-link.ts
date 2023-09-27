@@ -1,4 +1,4 @@
 export interface ExternalLink {
-    title: string;
+    linkTitle: string;
     href: string;
 }

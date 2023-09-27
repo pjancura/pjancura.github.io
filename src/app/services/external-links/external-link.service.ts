@@ -8,11 +8,11 @@ export class ExternalLinkService {
 
   externalLinks: ExternalLink[] = [
     {
-      title: 'myLinkedin',
+      linkTitle: 'myLinkedin',
       href: 'https://www.linkedin.com/in/paul-jancura-4a6a12178'
     },
     {
-      title: 'myGithub',
+      linkTitle: 'myGithub',
       href: 'https://github.com/pjancura'
     }
   ]
@@ -23,7 +23,7 @@ export class ExternalLinkService {
   getTitleArray(): String[] {
     const hrefTitle: String[] = [];
     for (let i = 0; i < this.externalLinks.length; i++){
-        hrefTitle.push(this.externalLinks[i].title);
+        hrefTitle.push(this.externalLinks[i].linkTitle);
     }
     return hrefTitle;
   };

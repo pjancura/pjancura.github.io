@@ -8,26 +8,26 @@ export class AssetService {
 
   assets : Asset[] = [
     {
-      title: 'linkedin_logo',
+      assetTitle: 'linkedin_logo',
       whereUsed: 'footer Component on home page',
-      url: "assets/icons/linkedin_logo.svg",
+      assetURL: "assets/icons/linkedin_logo.svg",
       altText: "linkedin_logo.svg"
     },
     {
-      title: 'github_logo',
+      assetTitle: 'github_logo',
       whereUsed: 'footer Component on home page',
-      url: "assets/icons/github_logo.svg",
+      assetURL: "assets/icons/github_logo.svg",
       altText: 'github_logo.svg'
     },
     {
-      title: 'resume',
+      assetTitle: 'resume',
       whereUsed: 'aboutMe Component',
-      url: "assets/downloadables/jancura_resume.pdf",
+      assetURL: "assets/downloadables/jancura_resume.pdf",
     },
     {
-      title: 'download_icon',
+      assetTitle: 'download_icon',
       whereUsed: 'aboutMe Component',
-      url: "assets/icons/download_icon.svg",
+      assetURL: "assets/icons/download_icon.svg",
       altText: 'download_icon.svg'
     },
   ]
@@ -38,7 +38,7 @@ export class AssetService {
   getTitleArray(): String[] {
     const assetTitle: String[] = [];
     for (let i = 0; i < this.assets.length; i++){
-        assetTitle.push(this.assets[i].title);
+        assetTitle.push(this.assets[i].assetTitle);
     }
     return assetTitle;
   };

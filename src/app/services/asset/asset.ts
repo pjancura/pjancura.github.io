@@ -1,6 +1,6 @@
 export interface Asset {
-    title: string,
+    assetTitle: string,
     whereUsed: string;
-    url: string;
+    assetURL: string;
     altText?: string;
 }
