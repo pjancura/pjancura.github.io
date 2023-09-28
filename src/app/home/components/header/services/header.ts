@@ -1,5 +1,5 @@
 export interface HeaderDetails {
-    introduction: string;
     heading: string;
+    introduction: string;
     subheader: string;
 }

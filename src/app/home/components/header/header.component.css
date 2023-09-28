@@ -1,12 +1,11 @@
-/* 
+
 
 .introDiv {
-    width: 100%;
-    aspect-ratio: 1.945;
-    position: relative;
-    z-index: 6;
+  /* background-color: #ffab4cff; */
+  font-family: "Verdana", "Tahoma", "sans-serif"; 
+  /* background-color: #2f4858ff; */
   }
-  
+/*  
   .headerPic {
     width: 100%;
     position: relative;
