@@ -7,6 +7,8 @@ import { SkillsService } from './services/skill/skills.service';
 import { Skills } from './services/skill/skills';
 import { Input } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { ExternalLink } from 'src/app/services/external-links/external-link';
+import { ExternalLinkService } from 'src/app/services/external-links/external-link.service';
 
 @Component({
   selector: 'portfolio-about-me',
@@ -22,20 +24,27 @@ export class AboutMeComponent {
 
   skills: Skills[] = this.skillsService.getSkills();
 
-  
+  linkedinLogo: Asset = this.assetService.getAsset('linkedin_logo');
+  githubLogo: Asset = this.assetService.getAsset('github_logo');
+
+  linkedinHref: ExternalLink = this.externalLink.getHref('myLinkedin');
+  githubHref: ExternalLink = this.externalLink.getHref('myGithub');
+
+
+  // constructor (private assetService: AssetService, private externalLink: ExternalLinkService) {}
 
   constructor(
     private aboutMeService: AboutMeService,
     private assetService: AssetService,
     private skillsService: SkillsService,
+    private externalLink: ExternalLinkService,
     // Injecting DOCUMENT should allow me to create JS like scripts to do DOM manipulation
     @Inject(DOCUMENT) private document: Document,
   ) {
   }
   
   ngOnInit():void {
-    this.generateSkillTable();
-
+    // this.generateSkillTable();
   }
 
   generateSkillTable(): void {

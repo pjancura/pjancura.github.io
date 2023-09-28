@@ -13,6 +13,8 @@ import { AssetService } from 'src/app/services/asset/asset.service';
 })
 export class FooterComponent {
 
+  thisYear: Date = new Date()
+
   linkedinLogo: Asset = this.assetService.getAsset('linkedin_logo');
   githubLogo: Asset = this.assetService.getAsset('github_logo');
 

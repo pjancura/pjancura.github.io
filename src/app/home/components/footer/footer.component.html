@@ -1,16 +1,6 @@
-<footer class="footerDiv">
-    <div id="contactMe" class="contactDiv">
-      <h3 class="footerHeading">Contact Me:</h3>
-      <div class="profileLinkDiv">
-        <a
-          class="footerLinkedIn"
-          [href]="linkedinHref.href"
-          ><img [src]="linkedinLogo.assetURL" [alt]="linkedinLogo.altText"
-        /></a>
-        <a [href]="githubHref.href"
-          ><img [src]="githubLogo.assetURL" [alt]="githubLogo.altText"
-        /></a>
-      </div>
-    </div>
-    <p class="copyRight">&copy;2023</p>
+
+<footer class="footerDiv py-3">
+    <hr class="pb-3">
+    <p class="copyRight text-center my-auto">&copy;{{thisYear.getFullYear()}} Paul Jancura</p>
   </footer>
+
