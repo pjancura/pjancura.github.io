@@ -1,15 +1,15 @@
-footer {
+/* footer {
   background-color: #33658aff;
-  color: #9fdafaff;
-    /* padding: 0.5rem 11% 75px;
+  color: #9fdafaff; 
+  padding: 0.5rem 11% 75px;
     display: flex;
-    justify-content: space-between; */
-  }
+    justify-content: space-between;
+  } */
   hr {
-    color: #9fdafaff;
+    /* color: #9fdafaff; */
     width: 25vw;
     margin: 0 auto;
-    border-top: 0.5vw dotted;
+    border-top: 0.2vw solid;
 }
 
 /*

@@ -45,6 +45,7 @@ export class AboutMeComponent {
   
   ngOnInit():void {
     // this.generateSkillTable();
+    // this.changeBtnColor();
   }
 
   generateSkillTable(): void {
@@ -72,6 +73,10 @@ export class AboutMeComponent {
         break;
       }
     }
-    // this.document.getElementById("skillDisplay")?.setAttribute("class", "table");
   }
+
+  changeBtnColor(){
+    this.document.getElementById("resumeBtn")?.setAttribute("style", "background-color: #204058;border-color: #204058;" )
+  }
+
 }

@@ -1,10 +1,13 @@
+.headerLine1 {
+  font-size: 8vw;
+  font-weight: 900;
+}
 
-
-.introDiv {
-  /* background-color: #ffab4cff; */
-  font-family: "Verdana", "Tahoma", "sans-serif"; 
-  /* background-color: #2f4858ff; */
-  }
+/* .introDiv {
+  background-color: #ffab4cff; 
+   font-family: "Verdana", "Tahoma", "sans-serif";  
+   background-color: #2f4858ff;
+  } */
 /*  
   .headerPic {
     width: 100%;
@@ -35,10 +38,7 @@
   .headerTextGroup {
     line-height: 0.90em;
   }
-  .headerLine1 {
-    font-size: 3vw;
-    margin-left: -2px;
-  }
+
   h1.headerLine2 {
     font-size: 6vw;
     margin-left: -5px;

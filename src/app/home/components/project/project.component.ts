@@ -92,10 +92,10 @@ export class ProjectComponent {
         this.document.getElementsByClassName("card-body")[i].children[3].setAttribute("class", "btn btn-primary");
         this.document.getElementsByClassName("card-body")[i].children[3].textContent = "See Demo";
         this.document.getElementsByClassName("row g-0")[i].appendChild(this.document.createElement("div"));
-        this.document.getElementsByClassName("row g-0")[i].children[1].setAttribute("class", "col-md-4")
+        this.document.getElementsByClassName("row g-0")[i].children[1].setAttribute("class", "col-md-4 px-5")
         this.document.getElementsByClassName("row g-0")[i].children[1].appendChild(imgCreate);
         this.document.getElementsByClassName("row g-0")[i].children[1].children[0].setAttribute("src", this.projects[i].assetURL);
-        this.document.getElementsByClassName("row g-0")[i].children[1].children[0].setAttribute("class", "img-fluid rounded-start");
+        this.document.getElementsByClassName("row g-0")[i].children[1].children[0].setAttribute("class", "img-fluid rounded-3 ");
         if (this.projects[i].altText){
           this.document.getElementsByClassName("row g-0")[i].children[1].children[0].setAttribute("alt", this.projects[i].altText!);
         }
