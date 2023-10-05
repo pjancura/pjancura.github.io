@@ -1,248 +1,216 @@
-<!-- doctype tells a browser how to render a website -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <!-- lang is an attribute for language, en = english,
-dir...is for the direction of the reader,
-ltr...left to right...rtl...right to left -->
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="public/style.css" />
-    <title>Paul's Personal Site</title>
   </head>
 
   <body>
-    <div class="introDiv">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">PJ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <div class="container-fluid d-flex justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contactMe">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header class="head mb-5">
       <img
         class="headerPic matchWH"
-        src="public/header_pic_1.jpeg"
+        src="public/header_pic_2.jpeg"
         alt="header_pic.jpeg"
       />
-      <div class="mask1">
-        <div class="headerTextDiv">
-          <h2 class="headerText headerLine1">Hello! I'm</h2>
-          <h1 class="headerText headerLine2">Paul Jancura</h1>
-          <h5 class="headerText headerLine3">
-            A highly motivated and detail oriented software developer.
-          </h5>
+      <div class="mask1 conatiner-fluid">
+        <div class="headerText mx-auto text-center w-75">
+          <h1 class="">Hello, I'm Paul!</h1>
+          <h2>Some Filler Text</h2>
+          <p class="">
+            I first took the initiative to start
+            learning to code through a Udemy course a year ago. It has been fun
+            building the various projects, as they solidify what I am learning
+            from the curriculum. Also, even though my degree isn’t in Computer
+            Science or Business, I have proven that I can adapt to new fields and
+            be successful. Through the Cleveland Codes Software Developers Academy
+            at Cuyahoga Community College, I have further enhanced my skills with
+            Python, MySQL, Javascript, HTML and CSS.
+          </p>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="aboutMeDiv">
-      <div class="aboutMeCard1">
-        <h2 class="aboutMeTitle">About Me</h2>
-        <p class="introStory">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I first took the initiative to start
-          learning to code through a Udemy course a year ago. It has been fun
-          building the various projects, as they solidify what I am learning
-          from the curriculum. Also, even though my degree isn’t in Computer
-          Science or Business, I have proven that I can adapt to new fields and
-          be successful. Through the Cleveland Codes Software Developers Academy
-          at Cuyahoga Community College, I have further enhanced my skills with
-          Python, MySQL, Javascript, HTML and CSS.
-        </p>
-        <button class="downloadBtn">
-          <a
-            class="downloadAnchor"
-            href="public/jancura_resume_2023.pdf"
-            download
-            ><img
-              class="downloadIcon"
-              src="public/download_icon.svg"
-              alt="download"
-            /><span class="downloadText">Resume</span></a
-          >
-        </button>
-      </div>
-      <img
-        id="profilePic"
-        src="public/new_headshot.jpg"
-        alt="Profile Picture"
-      />
-    </div>
+    <!-- Project Accordions -->
 
-    <div class="summaryOfWork">
-      <details>
-        <summary class="summaryTitle">Education</summary>
-        <div class="detailDiv">
-          <h3>Cuyahoga Community College</h3>
-          <ul>
-            <li>March 2023 - June 2023</li>
-            <li>Cleveland Codes Software Developers Academy</li>
-            <li>
-              PearsonVUE Certificates in HTML/CSS, Javascript, MySQL
-              (Databases), and Python
-            </li>
-          </ul>
-          <h3>The Ohio State University</h3>
-          <ul>
-            <li>2008 - 2012</li>
-            <li>Bachelor's of Music Eduation, Magna Cum Laude</li>
-          </ul>
-        </div>
-      </details>
-      <br />
-      <details>
-        <summary class="summaryTitle">Technical Skills</summary>
-        <div class="detailDiv">
-          <table class="detailTable">
-            <tbody>
-              <tr>
-                <th>Programming Languages</th>
-                <th>Web Development</th>
-                <th>Tools</th>
-              </tr>
-              <tr>
-                <td>Python</td>
-                <td>MVC Frameworks</td>
-                <td>VS Code</td>
-              </tr>
-              <tr>
-                <td>MySQL</td>
-                <td>HTML</td>
-                <td>Hyper Terminal</td>
-              </tr>
-              <tr>
-                <td>Javascript</td>
-                <td>CSS</td>
-                <td>Inkscape</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Web2Py</td>
-                <td>MySQL Workbench</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
-      <br />
-      <details>
-        <summary class="summaryTitle">Project Experience</summary>
-        <div class="detailDiv">
-          <h3>Cuyahoga Community College</h3>
-          <p>Spring 2023</p>
-          <p>Software Development Projects</p>
-          <ul>
-            <li>
-              Assisted in the development of a Python based customer relations
-              manager web application so that employees could effectively track
-              communication with their customers and vendors
-            </li>
-            <li>
-              Using MySQL, built a database that stores information about Grieg
-              Lyric Pieces for piano. It includes the ability to query
-              information about a given piece and recordings that includes the
-              performance of that piece
-            </li>
-            <li>
-              Built a Simon game clone using Javascript, HTML, CSS, and
-              Bootstrap
-            </li>
-            <li>
-              Wrote a Python application that can take a text file of an HTML
-              table and parse it into a CSV (comma separated values) file
-            </li>
-          </ul>
-        </div>
-      </details>
-      <br />
-      <details>
-        <summary class="summaryTitle">Professional Experience</summary>
-        <div class="detailDiv">
-          <h3>Store Manager</h3>
-          <p>Zelikovitz Leathers - Ottawa, ON, CAN</p>
-          <p>2020 - 2021</p>
-          <ul>
-            <li>
-              Used psuedo-code to query our software to create lists of items
-              for inventory counts
-            </li>
-            <li>
-              Instructed new sales associates how to use POSitive for Business
-              (point of sale software)
-            </li>
-            <li>
-              Created an spreadsheet to calculate packaging of snaps, saving
-              30min of work
-            </li>
-            <li>
-              Created signage to communicate to customers our COVID restrictions
-            </li>
-            <li>
-              Assisting 3 - 4 customers a day with designing their projects and
-              picking materials
-            </li>
-            <li>
-              Reorganized the zipper storage to save customers 2 - 3 minutes of
-              searching
-            </li>
-            <li>
-              Created a spreadsheet of tasks to effectively communicate to the
-              store owner how long projects were taking
-            </li>
-          </ul>
+    <section id="projects" class="py-5" >
 
-          <h3>Associate</h3>
-          <p>Zelikovitz Leathers - Ottawa, ON, CAN</p>
-          <p>2020 January - May</p>
-          <ul>
-            <li>
-              Used psuedo-code to query our software to find price changes that
-              had not been done
-            </li>
-            <li>
-              Assisting 3 - 4 customers with designing their projects and
-              picking materials
-            </li>
-          </ul>
+      <!-- Full Stack CRM Project -->
+      <h2>Projects</h2>
+      <div class="accordion w-75 mx-auto my-4" id="accordionExample">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Full Stack CRM Project
+            </button>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <div class="mb-3 ms-auto me-auto">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Collaborated on a Python-based customer relations manager web application, streamlining communication tracking for employees.
 
-          <h3>Elementary Music and Technology Teacher</h3>
-          <p>Imagine Groveport Community Schools - Groveport, OH, USA</p>
-          <p>2013 - 2019</p>
-          <ul>
-            <li>2014: Teacher of the Year</li>
-            <li>
-              Started a 3rd and 4th Grade after school Choir / Band with an
-              average attendance of 15 students
-            </li>
-            <li>
-              Created curriculum that aided students in becoming familiar with
-              the computers to take standardized tests
-            </li>
-            <li>
-              Started a 4th grade music program that allowed students to learn
-              to play the recorder
-            </li>
-            <li>Managed classrooms with an average class size of 25</li>
-          </ul>
+                    </p>
+                    <h4 class="card-text">Tools:</h4>
+                    <p class="card-text"><small class="text-muted">Python, SQLite3, Web2Py, Javascript, HTML / CSS</small></p>
+                    <a href="https://www.youtube.com" class="btn btn-primary">See Demo</a>
+                  </div>
+                </div>
+                <div class="col-md-4 px-5">
+                  <img class="img-fluid rounded-3" src="public/header_pic_1.jpeg" alt="filler_img.jpeg">
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
         </div>
-      </details>
-    </div>
-    <footer class="footerDiv">
-      <div class="contactDiv">
-        <h3 class="footerHeading">Contact Me:</h3>
-        <!-- <p class="footerEmail">jancura.paul@gmail.com</p> -->
-        <div class="profileLinkDiv">
-          <a
-            class="footerLinkedIn"
-            href="https://www.linkedin.com/in/paul-jancura-4a6a12178"
-            ><img src="public/linkedin_logo.svg" alt="linkedin_logo.svg"
-          /></a>
-          <a href="https://github.com/pjancura"
-            ><img src="public/github_logo.svg" alt="github_logo.svg"
-          /></a>
+
+        <!-- Grieg Lyric Pieces Database -->
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Grieg Lyric Pieces Database
+            </button>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <div class="mb-3 ms-auto me-auto">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Utilized MySQL to design a database for storing information about Grieg Lyric Pieces, facilitating easy querying and recording management.</p>
+                    <h4 class="card-text">Tools:</h4>
+                    <p class="card-text"><small class="text-muted">MySQL, MySQL Workbench</small></p>
+                    <a href="https://www.youtube.com" class="btn btn-primary">See Demo</a>
+                  </div>
+                </div>
+                <div class="col-md-4 px-5">
+                  <img class="img-fluid rounded-3" src="public/header_pic_1.jpeg" alt="filler_img.jpeg">
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>  
+
+        <!-- Simon Game Clone -->
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              Simon Game Clone
+            </button>
+          </h3>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <div class="mb-3 ms-auto me-auto">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Developed a clone of the classic game Simon. This demonstrates linking events to DOM elements to create an interactive experience.</p>
+                    <h4 class="card-text">Tools:</h4>
+                    <p class="card-text"><small class="text-muted">Javascript, HTML / CSS, Boostrap</small></p>
+                    <a href="/simon_clone/simon.html" class="btn btn-primary">Play Game</a>
+                  </div>
+                </div>
+                <div class="col-md-4 px-5">
+                  <img class="img-fluid rounded-3" src="public/simon_clone.png" alt="Screen grab of Simon Clone">
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Python CLI Project -->
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Python CLI Project
+            </button>
+          </h3>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <div class="mb-3 ms-auto me-auto">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Created a Python application to convert HTML table text files into CSV format, improving data accessibility and usability.</p>
+                    <h4 class="card-text">Tools:</h4>
+                    <p class="card-text"><small class="text-muted">Python</small></p>
+                    <a href="https://www.youtube.com" class="btn btn-primary">See Demo</a>
+                  </div>
+                </div>
+                <div class="col-md-4 px-5">
+                  <img class="img-fluid rounded-3" src="public/header_pic_1.jpeg" alt="filler_img.jpeg">
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+        <!-- Tools and Contact Info -->
+
+    <section id="contactMe" class="">
+      <div class="container-fluid">
+        <div class="d-flex py-5 justify-content-around">
+          <div id="toolsList" class="py-4 px-4 rounded-4 border border-primary-subtle">
+            <h2>Common Tools</h2>
+            <ul>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>MySQL</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+          <div id="contactInfo" class="py-4 px-4 rounded-4 border border-primary-subtle">
+            <h2>Contact Me:</h2>
+            <p>jancura.paul@gmail.com</p>
+            <div class="pb-3">
+              <a class="pe-3" href="https://www.linkedin.com/in/paul-jancura-4a6a12178/"><img src="public/linkedin_logo.svg" alt="linkedin_logo.svg"></a>
+              <a href="https://github.com/pjancura"><img src="public/github_logo.svg" alt="github_logo.svg"></a>
+            </div>
+            <a class="btn btn-primary" href="public/jancura_resume_2023.pdf"><img id="downloadIcon" class="mb-1" src="public/download_icon.svg" alt="download_icon.svg"><span class="fs-5 ps-2">Resume</span></a>
+          </div>
         </div>
       </div>
-      <p class="copyRight">&copy;2023</p>
+    </section>
+    <footer class="footer text-center">
+      
+      <p class="copyRight mb-0 py-3">&copy;2023 Paul Jancura</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
 
