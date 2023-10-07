@@ -50,20 +50,29 @@ header{
   margin-top: 2rem;
 }
 
+.head {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  z-index: 6;
+}
+
 h1 {
   font-weight: 900;
   font-size: 5rem;
 }
 
 .headerText {
-  transform: translateY(12rem);  
+  transform: translateY(13rem);  
 }
 
-.head {
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  z-index: 6;
+.headerText h2 {
+  font-weight: 600;
+}
+
+.headerText p {
+  font-size: 1.25rem;
+  font-weight: 200;
 }
 
 .headerPic {
