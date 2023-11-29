@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: #22303f;
+    font-size: 2em;
   }
   
   
@@ -9,7 +10,6 @@ body {
   
   #level-title {
     font-family: 'Press Start 2P', monospace, sans-serif;
-    font-size: 3rem;
     margin:  5%;
     color: #FEF2BF;
   }
@@ -22,11 +22,11 @@ body {
   }
   
   .button {
-    margin: 25px;
+    margin: 1.2rem;
     display: inline-block;
-    height: 200px;
-    width: 200px;
-    border: 10px solid black;
+    height: 12rem;
+    aspect-ratio: 1;
+    border: 0.6rem solid black;
     border-radius: 20%;
   }
   

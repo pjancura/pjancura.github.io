@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Paul Jancura" />
+    <meta name="keywords" content="software developer, Python, Javascript, HTML, CSS, MySQL, portfolio, Cleveland, Ohio, Paul, Jancura, Paul Jancura" />
+    <meta name="description" content="Portfolio and personal website of Paul Jancura.  A software developer in Cleveland, Ohio.  Looking for opportunities to build tools that make people's lives easier."/>
+    <title>Simon Clone</title>
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="public/styles/styles_simon.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Simon Clone</title>
-  <link rel="stylesheet" href="public/styles/styles_simon.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
+  <body>
+    <!-- SIMON GAME LAYOUT -->
 
-<body>
-      <!-- SIMON GAME LAYOUT -->
+    <h1 id="level-title">Press a Key to Start</h1>
+    <div class="container">
+      <div class="row">
+        <div type="button" id="green" class="button green"></div>
 
-  <h1 id="level-title">Press a Key to Start</h1>
-  <div class="container">
-    <div class="row">
-
-      <div type="button" id="green" class="button green">
-
+        <div type="button" id="red" class="button red"></div>
       </div>
 
-      <div type="button" id="red" class="button red">
-
+      <div class="row">
+        <div type="button" id="yellow" class="button yellow"></div>
+        <div type="button" id="blue" class="button blue"></div>
       </div>
     </div>
-
-    <div class="row">
-
-      <div type="button" id="yellow" class="button yellow">
-
-    </div>
-      <div type="button" id="blue" class="button blue">
-
-      </div>
-
-    </div>
-
-  </div>
-  <footer>
-    <button><a href="/index.html">Go Back</a></button>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="game.js"></script>
-  
-
-</body>
-
+    <footer>
+      <button><a href="/index.html">Go Back</a></button>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+  </body>
 </html>
