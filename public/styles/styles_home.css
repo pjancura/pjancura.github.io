@@ -3,12 +3,7 @@ color: #9fdafaff;
 background-color: #ffab4cff;
 background-color: #fff8f0ff; 
 background-color: #673d035e;*/
-:root {
-  /* FONT SIZES */
-  --fs-900: 5rem;
-  --fs-600: 
-  --fs-400: 1.25rem;
-}
+
 
 
 
@@ -53,33 +48,34 @@ nav, .navbar-brand, .nav-link {
 header{
   color: white;
   margin-top: 2rem;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   position: relative;
   z-index: 6;
 }
 
-
-h1 {
-  font-weight: 900;
-  font-size: 5rem;
+.headerText {
+  transform: translateY(25rem);  
   text-shadow: 1px 1px 1px black;
 }
 
-.headerText {
-  transform: translateY(13rem);  
+.headerText h1 {
+  font-weight: 900;
+  font-size: 5rem;
 }
+
 
 .headerText h2 {
   font-weight: 600;
-  text-shadow: 1px 1px 1px black;
 }
 
 .headerText p {
   font-size: 1.25rem;
   font-weight: 200;
-  text-shadow: 1px 1px 1px black;
-  text-align: justify;
+}
+
+.headerText a {
+  font-size: 1.25rem;
 }
 
 .headerPic {
@@ -98,6 +94,24 @@ h1 {
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+/*              ABOUT ME                       */
+
+#aboutMe div {
+  background-color: #9fdafaff;
+}
+
+#aboutMe h2 {
+  color: #33658aff;
+  margin: auto auto;
+  font-size: 3rem;
+  text-align: start;
+}
+
+#aboutMe p {
+  font-size: 1.25rem;
+  text-align: justify;
 }
 
 /*               PROJECTS SECTION              */
@@ -152,61 +166,64 @@ footer {
   color: #9fdafaff;
 }
 
+.attributions {
+  font-size: 0.6rem;
+}
 
-/*        SCREEN SIZE 1000PX         */
+/*                                                                SCREEN SIZE 1000PX         */
 
 @media screen and (max-width: 1000px){
+  /*               NAVBAR              */
 
-  /*               HEADER              */
+  .nav-link, .navbar-brand {
+    font-size: 1.25rem;
+  }
 
-header{
-  color: white;
-  margin-top: 2rem;
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  z-index: 6;
+    /*               HEADER              */
+
+    header{
+      height: 66vh;
+    }
+    
+    .headerText {
+      transform: translateY(12rem);  
+    }
+    
+    .headerText h1 {
+      font-size: 3.75rem;
+    }
+    
+    
+    .headerText h2 {
+      font-weight: 600;
+    }
+    
+    .headerText p {
+      font-size: 1.25rem;
+    }
+    
+    .headerPic {
+      height: 70vh;
+    }
+
+  /*              ABOUT ME                       */
+
+#aboutMe h2 {
+  font-size: 2.75rem;
 }
 
-
-h1 {
-  font-weight: 900;
-  font-size: 5rem;
-  text-shadow: 1px 1px 1px black;
+#aboutMe p {
+  font-size: 1.1rem;
 }
 
-.headerText {
-  transform: translateY(13rem);  
+  /*               PROJECTS SECTION              */
+
+#projects h2 {
+  font-size: 2.75rem;
 }
 
-.headerText h2 {
-  font-weight: 600;
-  text-shadow: 1px 1px 1px black;
-}
-
-.headerText p {
-  font-size: 1.25rem;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px black;
-  text-align: justify;
-}
-
-.headerPic {
-  width: 100%;
-  height: 85vh;
-  position: relative;
-  display: block;
-  z-index: -1;
-}
-
-.mask1 {
-  width: 100%;
-  height: 106.5%;
-  position: absolute;
-  background-color: #673d035e;
-  top: 0;
-  left: 0;
-  z-index: 10;
+.projectPicWrapper {
+  display: none;
 }
 
   /*               TOOLS AND CONTACT INFO              */
@@ -222,9 +239,96 @@ h1 {
   }
 }
 
-/*        SCREEN SIZE 600PX         */
+/*                                                                  SCREEN SIZE 1000PX and LANDSCAPE         */
+
+@media only (orientation: landscape) and (max-width: 940px) {
+
+  /*               HEADER              */
+
+  header{
+    height: 77vh;
+  }
+  
+  .headerText {
+    transform: translateY(6rem);  
+  }
+  
+  .headerText h1 {
+    font-size: 2.75rem;
+  }
+  
+  
+  .headerText h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .headerText p {
+    font-size: 1rem;
+  }
+  
+  .headerPic {
+    height: 82vh;
+  }
+  
+  /*               PROJECTS SECTION              */
+  #projects h2 {
+    font-size: 2.25rem;
+  }
+  
+  .projectPicWrapper {
+    display: none;
+  }
+}
+  
+
+/*                                                                   SCREEN SIZE 600PX         */
 
 @media screen and (max-width: 600px){
+
+    /*               HEADER              */
+
+header{
+  height: 66vh;
+  overflow: hidden;
+}
+
+.headerText h1 {
+  font-size: 3rem;
+}
+
+
+.headerText h2 {
+  font-weight: 500;
+}
+
+.headerText p {
+  font-size: 1rem;
+}
+
+.headerPic {
+  width: 700px;
+}
+
+/*              ABOUT ME                       */
+
+#aboutMe h2 {
+  font-size: 2.5rem;
+}
+#aboutMe p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/*               PROJECTS SECTION              */
+#projects h2 {
+  font-size: 2.5rem;
+}
+
+.projectPic {
+  display: none;
+}
+
   /*               TOOLS AND CONTACT INFO              */
 
   #contactMe div.container{
@@ -233,4 +337,37 @@ h1 {
   #toolsList, #contactInfo {
     min-width: 16rem;
   }
+}
+
+/*                                                                   SCREEN SIZE 375PX         */
+
+@media screen and (max-width: 375px){
+
+  /*               HEADER              */
+
+header{
+height: 85vh;
+}
+
+.headerPic {
+height: 85vh;
+}
+
+/*               PROJECTS SECTION              */
+
+a[href="https://pert2.pythonanywhere.com/"] {
+  margin-top: 1rem;
+}
+}
+
+/*                                                                   SCREEN SIZE 300PX         */
+
+@media screen and (max-width: 300px){
+
+  /*               HEADER              */
+
+.headerText {
+  transform: translateY(6rem);
+}
+
 }

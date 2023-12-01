@@ -33,8 +33,8 @@
           <div class="container-fluid d-flex justify-content-end">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contactMe">Contact
-                  Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contactMe">Contact Me</a></li>
             </ul>
           </div>
         </div>
@@ -48,27 +48,38 @@
         class="headerPic"
         src="public/images/header_pic_2.jpeg"
         alt="header_pic.jpeg" />
-      <div class="mask1 conatiner-fluid">
-        <div class="headerText mx-auto text-center w-75">
+      <div class="mask1 container-fluid">
+        <div class="headerText mx-auto w-75">
           <h1 class>Hello, I'm Paul!</h1>
           <h2>A Software Developer</h2>
-          <p class="w-75 mx-auto">
-            Throughout my previous work experience the part of my job that appealed 
-            to me has always been using software to make my work easier.  
-            When I was a music / technology teacher I used the various Google 
-            products to create instructional aids. When I moved to a new country, 
-            I found work as a store manager, and I taught myself how to code queries 
-            for our product database that sped up doing our product inventories. 
-            Upon coming back to the states, I decided to dive into learning about 
-            programming starting with an online course. Now that I have completed 
-            Tri-C’s Cleveland Codes program, I am looking for a position where 
-            I can apply my creativity, curiosity, and coding skills to build 
-            your latest projects. 
+          <p>
+            Looking to build tools that make people's lives easier.
           </p>
+          <a class="btn btn-primary" href="#projects">Projects</a>
         </div>
       </div>
     </header>
-
+    
+    <!-- About Me -->
+    <section id="aboutMe" class="py-5 mt-5">
+      <div class="w-75 mx-auto p-3 border border-primary-subtle rounded-3">
+      <h2 class="mx-auto pb-3">About Me</h2> 
+      <p class="mx-auto mb-0">
+        Throughout my previous work experience the part of my job that appealed 
+        to me has always been using software to make my work easier.  
+        When I was a music / technology teacher I used the various Google 
+        products to create instructional aids. When I moved to a new country, 
+        I found work as a store manager, and I taught myself how to code queries 
+        for our product database that sped up doing our product inventories. 
+        Upon coming back to the states, I decided to dive into learning about 
+        programming starting with an online course. Now that I have completed 
+        Tri-C’s Cleveland Codes program, I am looking for a position where 
+        I can apply my creativity, curiosity, and coding skills to build 
+        your latest projects. 
+      </p>
+    </div> 
+    </section>
+      
     <!-- Project Accordions -->
 
     <section id="projects" class="py-5">
@@ -89,8 +100,7 @@
             <div class="accordion-body">
               <div class="mb-3 ms-auto me-auto">
                 <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body col-md-8">
                       <p class="card-text">Led a group project on a Python-based
                         customer relations manager web application, streamlining
                         communication tracking for employees and visualizing
@@ -102,11 +112,10 @@
                           SQLite3, Web2Py (an MVC Framework), Javascript, HTML / CSS</small></p>
                       <a href="https://www.youtube.com" class="btn btn-primary" target="_blank">See
                         Demo</a>
-                        <a href="https://pert2.pythonanywhere.com/" class="btn btn-primary" target="_blank">Visit the App</a>
-                    </div>
+                      <a href="https://pert2.pythonanywhere.com/" class="btn btn-primary" target="_blank">Visit the App</a>
                   </div>
-                  <div class="col-md-4 px-5">
-                    <img class="img-fluid rounded-3"
+                  <div class="projectPicWrapper col-md-4 px-5">
+                    <img class="projectPic img-fluid rounded-3"
                       src="public/images/pert_logo.jpeg"
                       alt="filler_img.jpeg">
                   </div>
@@ -131,8 +140,7 @@
             <div class="accordion-body">
               <div class="mb-3 ms-auto me-auto">
                 <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body col-md-8">
                       <p class="card-text">Developed a clone of the classic game
                         Simon. This demonstrates linking events to DOM elements
                         to create an interactive experience.</p>
@@ -142,9 +150,8 @@
                       <a href="simon.html" class="btn btn-primary" target="_blank">Play
                         Game</a>
                     </div>
-                  </div>
-                  <div class="col-md-4 px-5">
-                    <img class="img-fluid rounded-3"
+                  <div class="projectPicWrapper col-md-4 px-5">
+                    <img class="projectPic img-fluid rounded-3"
                       src="public/images/simon_clone.png"
                       alt="Screen grab of Simon Clone">
                   </div>
@@ -169,8 +176,7 @@
             <div class="accordion-body">
               <div class="mb-3 ms-auto me-auto">
                 <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body col-md-8">
                       <p class="card-text">Utilized MySQL to design a database
                         for storing information about Grieg Lyric Pieces,
                         facilitating easy querying and recording management.</p>
@@ -180,9 +186,8 @@
                       <a href="https://www.youtube.com" class="btn btn-primary" target="_blank">See
                         Demo</a>
                     </div>
-                  </div>
-                  <div class="col-md-4 px-5">
-                    <img class="img-fluid rounded-3"
+                  <div class="projectPicWrapper col-md-4 px-5">
+                    <img class="projectPic img-fluid rounded-3"
                       src="public/images/header_pic_2.jpeg"
                       alt="filler_img.jpeg">
                   </div>
@@ -208,8 +213,7 @@
             <div class="accordion-body">
               <div class="mb-3 ms-auto me-auto">
                 <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body col-md-8">
                       <p class="card-text">Created a Python application to
                         convert HTML table text files into CSV format, improving
                         data accessibility and usability.</p>
@@ -218,9 +222,8 @@
                       <a href="https://www.youtube.com" class="btn btn-primary" target="_blank">See
                         Demo</a>
                     </div>
-                  </div>
-                  <div class="col-md-4 px-5">
-                    <img class="img-fluid rounded-3"
+                  <div class="projectPicWrapper col-md-4 px-5">
+                    <img class="projectPic img-fluid rounded-3"
                       src="public/images/header_pic_2.jpeg"
                       alt="filler_img.jpeg">
                   </div>
@@ -266,9 +269,10 @@
           </div>
         </div>
       </section>
-      <footer class="footer text-center">
+      <footer class="footer text-center py-2">
 
-        <p class="copyRight mb-0 py-3">&copy;2023 Paul Jancura</p>
+        <p class="copyRight mb-0">&copy;2023 Paul Jancura</p>
+        <p class="attributions mb-0">Header Image generated with: hotpot.ai/art-generation</p>
       </footer>
       <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
