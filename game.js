@@ -32,7 +32,7 @@ $(".button").on("click", function(){
             setTimeout(nextSequence, ((gameLength * 750) + 1750));        
             // console.log(gamePattern);
             // console.log("condition advance to level " + level);       
-        } else if(userPattern[clicks] === gamePattern[clicks] && gameLength > 1){
+        } else if(userPattern[clicks] === gamePattern[clicks]){
             clicks++;
             // console.log("condition continue pattern");
         } else {
@@ -65,15 +65,14 @@ function animatePress(currentColour){
     $("." + currentColour).addClass("pressed");
     setTimeout(function(){
         $("." + currentColour).removeClass("pressed")
-}, 100)
+}, 200)
 }
 
 function playOldSequence(){    
     for (let i = 0; i < gamePattern.length; i++){
     setTimeout(function(){    
-        let oldSound = gamePattern[i];
-        animatePress(oldSound);
-        playSound(oldSound);
+        playSound(gamePattern[i]);
+        animatePress(gamePattern[i]);
 }, ((i * 750) + 750))}}
 
 function failure(){
@@ -84,7 +83,7 @@ function failure(){
     $("body").addClass("game-over");
     setTimeout(function(){
         $("body").removeClass("game-over")
-    }, 100)
+    }, 200)
     // resets game
     $("h1").html("Press 'Start' to play again!");
     $(".start").css("display","block");
