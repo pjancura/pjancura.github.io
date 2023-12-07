@@ -12,7 +12,7 @@ $(".start").on("click", function(){
     if (!started){
         started = true;
         nextSequence(); 
-    }});
+    }})
 
 $(".button").on("click", function(){
     let userChosenColour = this.id;
@@ -21,23 +21,23 @@ $(".button").on("click", function(){
     animatePress(userChosenColour);
     let gameLength = gamePattern.length;
     let userLength = userPattern.length;     
-    console.log("gamePattern = " + gamePattern);
+    // console.log("gamePattern = " + gamePattern);
     if(userLength > level){
         failure();
-        console.log("End User Pattern = " + userPattern);
-        console.log("condition Too Many Clicks");
+        // console.log("End User Pattern = " + userPattern);
+        // console.log("condition Too Many Clicks");
     } else {
         } if (clicks === (gameLength - 1) && userChosenColour === gamePattern[gameLength - 1]){
             setTimeout(playOldSequence, 1000);
             setTimeout(nextSequence, ((gameLength * 750) + 1750));        
-            console.log(gamePattern);
-            console.log("condition advance to level " + level);       
+            // console.log(gamePattern);
+            // console.log("condition advance to level " + level);       
         } else if(userPattern[clicks] === gamePattern[clicks] && gameLength > 1){
             clicks++;
-            console.log("condition continue pattern");
+            // console.log("condition continue pattern");
         } else {
             failure();
-            console.log("condition wrong answer");
+            // console.log("condition wrong answer");
 }})
 
 function nextSequence(){
@@ -53,7 +53,8 @@ function nextSequence(){
         clicks = 0;
     } else{
         return;
-    }}
+    }
+}
 
 function playSound(name){
     let buttonSound = new Audio("public/sounds/" + name + ".mp3");
@@ -64,7 +65,8 @@ function animatePress(currentColour){
     $("." + currentColour).addClass("pressed");
     setTimeout(function(){
         $("." + currentColour).removeClass("pressed")
-}, 100)}
+}, 100)
+}
 
 function playOldSequence(){    
     for (let i = 0; i < gamePattern.length; i++){
@@ -78,12 +80,14 @@ function failure(){
     started = false;
     let fail = new Audio("public/sounds/wrong.mp3");
     fail.play();
-    $("h1").html("Press 'Start' to play again!");
-    $(".start").css("display","block");
+    // flashes screen red
     $("body").addClass("game-over");
     setTimeout(function(){
         $("body").removeClass("game-over")
     }, 100)
+    // resets game
+    $("h1").html("Press 'Start' to play again!");
+    $(".start").css("display","block");
     gamePattern = [];
     userPattern = [];
     level = 0;
