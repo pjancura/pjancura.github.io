@@ -81,7 +81,6 @@ header{
 .headerPic {
   width: 100%;
   height: 85vh;
-  min-height: 555px;
   position: relative;
   display: block;
   z-index: -1;
@@ -242,7 +241,7 @@ footer {
 
 /*                                                                  SCREEN SIZE 1000PX and LANDSCAPE         */
 
-@media only (orientation: landscape) and (max-width: 940px) {
+@media (orientation: landscape) and (max-width: 940px) {
 
   /*               HEADER              */
 
@@ -291,7 +290,7 @@ footer {
 
 header{
   height: 66vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .headerText h1 {
@@ -348,6 +347,7 @@ header{
 
 header{
 height: 85vh;
+min-height: 555px;
 }
 
 .headerPic {
