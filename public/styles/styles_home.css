@@ -50,6 +50,7 @@ header{
   margin-top: 2rem;
   width: 100vw;
   height: 80vh;
+  min-height: 555px;
   position: relative;
   z-index: 6;
 }
@@ -239,7 +240,7 @@ footer {
   }
 }
 
-/*                                                                  SCREEN SIZE 1000PX and LANDSCAPE         */
+/*                                                                  SCREEN SIZE 940PX and LANDSCAPE         */
 
 @media (orientation: landscape) and (max-width: 940px) {
 
