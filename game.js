@@ -7,7 +7,8 @@ let level = 0;
 let clicks = 0;
 let started = false;
 
-$("body").on("keydown", function(){
+$(".start").on("click", function(){
+    $(".start").css("display","none");
     if (!started){
         started = true;
         nextSequence(); 
@@ -77,7 +78,8 @@ function failure(){
     started = false;
     let fail = new Audio("public/sounds/wrong.mp3");
     fail.play();
-    $("h1").html("FAILURE - Press any key to start again!");
+    $("h1").html("Press 'Start' to play again!");
+    $(".start").css("display","block");
     $("body").addClass("game-over");
     setTimeout(function(){
         $("body").removeClass("game-over")

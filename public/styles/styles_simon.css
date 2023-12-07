@@ -13,6 +13,17 @@ body {
     margin:  5%;
     font-size: 3rem;
   }
+
+  .start {
+    font-family: 'Press Start 2P', monospace, sans-serif;
+    font-size: 2rem;
+    background-color: #FEF2BF;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75rem 0.75rem 0.5rem;
+  }
   
   .container {
     width: 50%;
@@ -92,6 +103,10 @@ body {
     #level-title {
       font-size: 1.6rem;
     }
+
+    .start {
+      font-size: 1.6rem;
+    }
     
     .button {
       margin: 0.7rem;
@@ -104,19 +119,10 @@ body {
     }
   }
 
-  @media screen and (max-width: 640px) {
-    #level-title {
-      font-size: 1.6rem;
-    }
-    
+  @media screen and (max-width: 640px) {    
     .button {
       margin: 0.3rem;
       width: 4.6rem;
-      border: 0.3rem solid black;
-    }
-
-    footer button {
-      font-size: 1.6rem;
     }
   }
   
