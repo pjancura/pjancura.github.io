@@ -4,9 +4,6 @@ background-color: #ffab4cff;
 background-color: #fff8f0ff; 
 background-color: #673d035e;*/
 
-
-
-
 body {
   background-color: #ffab4cff;
   font-family: "Verdana", "Tahoma", "sans-serif";
@@ -17,7 +14,9 @@ body {
   color: white;
 }
 
-nav, .navbar-brand, .nav-link {
+nav,
+.navbar-brand,
+.nav-link {
   background-color: #33658aff;
   color: #9fdafaff;
 }
@@ -34,7 +33,8 @@ nav, .navbar-brand, .nav-link {
   background-color: #33658a15;
 }
 
-.navbar-toggler, .navbar-toggler-icon {
+.navbar-toggler,
+.navbar-toggler-icon {
   background-color: #9fdafaff;
 }
 
@@ -42,10 +42,9 @@ nav, .navbar-brand, .nav-link {
   box-shadow: 0 0 0 0.25rem #5a92af;
 }
 
-
 /*               HEADER              */
 
-header{
+header {
   color: white;
   margin-top: 2rem;
   width: 100vw;
@@ -57,7 +56,7 @@ header{
 }
 
 .headerText {
-  transform: translateY(25rem);  
+  transform: translateY(25rem);
   text-shadow: 1px 1px 1px black;
 }
 
@@ -65,7 +64,6 @@ header{
   font-weight: 900;
   font-size: 5rem;
 }
-
 
 .headerText h2 {
   font-weight: 600;
@@ -132,7 +130,7 @@ header{
   text-align: start;
 }
 
-.accordion{
+.accordion {
   --bs-accordion-active-bg: #9fdafa97;
 }
 
@@ -159,7 +157,8 @@ header{
   width: 1rem;
 }
 
-#toolsList, #contactInfo {
+#toolsList,
+#contactInfo {
   background-color: #9fdafaff;
 }
 
@@ -176,69 +175,70 @@ footer {
 
 /*                                                                SCREEN SIZE 1000PX         */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   /*               NAVBAR              */
 
-  .nav-link, .navbar-brand {
+  .nav-link,
+  .navbar-brand {
     font-size: 1.25rem;
   }
 
-    /*               HEADER              */
+  /*               HEADER              */
 
-    header{
-      height: 66vh;
-    }
-    
-    .headerText {
-      transform: translateY(12rem);  
-    }
-    
-    .headerText h1 {
-      font-size: 3.75rem;
-    }
-    
-    
-    .headerText h2 {
-      font-weight: 600;
-    }
-    
-    .headerText p {
-      font-size: 1.25rem;
-    }
-    
-    .headerPic {
-      height: 70vh;
-    }
+  header {
+    height: 66vh;
+  }
+
+  .headerText {
+    transform: translateY(12rem);
+  }
+
+  .headerText h1 {
+    font-size: 3.75rem;
+  }
+
+  .headerText h2 {
+    font-weight: 600;
+  }
+
+  .headerText p {
+    font-size: 1.25rem;
+  }
+
+  .headerPic {
+    height: 70vh;
+  }
 
   /*              ABOUT ME                       */
 
-#aboutMe h2 {
-  font-size: 2.75rem;
-}
+  #aboutMe h2 {
+    font-size: 2.75rem;
+  }
 
-#aboutMe p {
-  font-size: 1.1rem;
-}
+  #aboutMe p {
+    font-size: 1.1rem;
+  }
 
   /*               PROJECTS SECTION              */
 
-#projects h2 {
-  font-size: 2.75rem;
-}
+  #projects h2 {
+    font-size: 2.75rem;
+  }
 
-.projectPicWrapper {
-  display: none;
-}
+  .projectPicWrapper {
+    display: none;
+  }
 
   /*               TOOLS AND CONTACT INFO              */
 
-  #contactMe div.container{
+  #contactMe div.container {
     width: 40%;
   }
   #toolsList {
     margin-bottom: 1.5rem;
   }
-  #toolsList, #contactInfo {
+  #toolsList,
+  #contactInfo {
     width: 16rem;
   }
 }
@@ -246,133 +246,127 @@ footer {
 /*                                                                  SCREEN SIZE 940PX and LANDSCAPE         */
 
 @media (orientation: landscape) and (max-width: 940px) {
-
   /*               HEADER              */
 
-  header{
+  header {
     height: 77vh;
   }
-  
+
   .headerText {
-    transform: translateY(6rem);  
+    transform: translateY(6rem);
   }
-  
+
   .headerText h1 {
     font-size: 2.75rem;
   }
-  
-  
+
   .headerText h2 {
     font-weight: 600;
     font-size: 1.5rem;
   }
-  
+
   .headerText p {
     font-size: 1rem;
   }
-  
+
   .headerPic {
     height: 82vh;
   }
-  
+
   /*               PROJECTS SECTION              */
   #projects h2 {
     font-size: 2.25rem;
   }
-  
+
   .projectPicWrapper {
     display: none;
   }
 }
-  
 
 /*                                                                   SCREEN SIZE 600PX         */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+  /*               HEADER              */
 
-    /*               HEADER              */
+  header {
+    height: 66vh;
+    overflow-x: hidden;
+  }
 
-header{
-  height: 66vh;
-  overflow-x: hidden;
-}
+  .headerText h1 {
+    font-size: 3rem;
+  }
 
-.headerText h1 {
-  font-size: 3rem;
-}
+  .headerText h2 {
+    font-weight: 500;
+  }
 
+  .headerText p {
+    font-size: 1rem;
+  }
 
-.headerText h2 {
-  font-weight: 500;
-}
+  .headerPic {
+    width: 700px;
+  }
 
-.headerText p {
-  font-size: 1rem;
-}
+  /*              ABOUT ME                       */
 
-.headerPic {
-  width: 700px;
-}
+  #aboutMe h2 {
+    font-size: 2.5rem;
+  }
+  #aboutMe p {
+    font-size: 1rem;
+    text-align: left;
+  }
 
-/*              ABOUT ME                       */
+  /*               PROJECTS SECTION              */
+  #projects h2 {
+    font-size: 2.5rem;
+  }
 
-#aboutMe h2 {
-  font-size: 2.5rem;
-}
-#aboutMe p {
-  font-size: 1rem;
-  text-align: left;
-}
-
-/*               PROJECTS SECTION              */
-#projects h2 {
-  font-size: 2.5rem;
-}
-
-.projectPic {
-  display: none;
-}
+  .projectPic {
+    display: none;
+  }
 
   /*               TOOLS AND CONTACT INFO              */
 
-  #contactMe div.container{
+  #contactMe div.container {
     width: 40%;
   }
-  #toolsList, #contactInfo {
+  #toolsList,
+  #contactInfo {
     min-width: 16rem;
   }
 }
 
 /*                                                                   SCREEN SIZE 375PX         */
 
-@media screen and (max-width: 375px){
-
+@media screen and (max-width: 375px) {
   /*               HEADER              */
 
-header{
-height: 85vh;
-min-height: 555px;
-}
+  header {
+    height: 85vh;
+    min-height: 555px;
+  }
 
-.headerPic {
-height: 85vh;
-}
+  .headerPic {
+    height: 85vh;
+  }
 
-/*               PROJECTS SECTION              */
+  /*               PROJECTS SECTION              */
 
-a[href="https://pert2.pythonanywhere.com/"] {
-  margin-top: 1rem;
-}
+  a[href="https://pert2.pythonanywhere.com/"]
+  {
+    margin-top: 1rem;
+  }
 }
 
 /*                                                                   SCREEN SIZE 300PX         */
 
-@media screen and (max-width: 300px){
-
+@media screen and (max-width: 300px) {
   /*               HEADER              */
 
-.headerText {
-  transform: translateY(6rem);
-}
-
+  .headerText {
+    transform: translateY(6rem);
+  }
 }
